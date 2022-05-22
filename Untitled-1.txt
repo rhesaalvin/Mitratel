@@ -1,0 +1,18 @@
+if($detail->id_operator === $detail->id_operator?){ echo 
+"<option value='value' selected>Pilihan</option>"; }else{ echo "<option value='value'>Pilihan</option>"; }
+
+    <?php foreach ( $data_operator as $opt ){?>
+
+            <option value="<?php echo $datas[0]->id_operator; ?>"<?php if($opt->id_operator==$datas[0]->id_operator) echo 'selected="selected"'; ?>><?php echo $opt->id_operator; ?></option>
+
+    <?php }?>
+
+
+------------------------------------------------
+<?php
+foreach ($data_operator as $opt) {
+                                            echo "<option value= '".$opt->id_operator."'> "
+                                            .$opt->id_operator. " - " .$opt->nama_operator.
+                                            "</option>";
+                                            }
+                                        ?>
